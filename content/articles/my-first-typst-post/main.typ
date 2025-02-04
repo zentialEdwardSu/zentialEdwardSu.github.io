@@ -1,6 +1,6 @@
 #set page(
     paper: "a4",
-    margin: (x: 1.8cm, y: 1.5cm),
+    margin: 0pt,
   )
 
 #set text(
