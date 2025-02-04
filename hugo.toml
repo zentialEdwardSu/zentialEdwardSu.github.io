@@ -34,7 +34,7 @@ enableGitInfo = true
 
   [[params.social]]
     name = "Mail" 
-    link = "hi@edwardsu.me"
+    link = "mailto:hi@edwardsu.me"
     icon = "ti ti-mail"
 
   # [[params.social]]

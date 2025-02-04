@@ -1,1 +1,7 @@
-[{"name": "Bear Notes", "description": "Quick note taking application on Mac for writing down instant thoughts, application on Mac for writing down instant thoughts", "link": "https://bear.app/", "icon": "https://blog.bear.app/wp-content/uploads/2018/10/bear-icon.png", "tag": ["Productivity"], "status": "Working"}]
+[
+    {"name": "Hugo Theme Piatto", 
+    "description": "A simple but sueful theme for Hugo", 
+    "link": "https://github.com/zentialEdwardSu/hugo-theme-piatto", 
+    "tag": ["CSS"], 
+    "status": "Working"}
+]
