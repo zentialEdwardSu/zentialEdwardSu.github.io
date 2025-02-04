@@ -1,0 +1,73 @@
+baseURL = 'https://example.org/' # will usually be overwrote during build time
+languageCode = 'en-us'
+title = 'Blog of EdwardSu'
+theme = "piatto"
+copyright = "MIT"
+enableGitInfo = true
+
+[params]
+  name = "EdwardSu"
+  description = "A Loafer and A bug producer."
+  initials = "ES" # up-left icon
+  footercd = true # cd ../ at bottom
+  showReadingTime=true # reading time
+  search = true # if show search bar at main
+  recentPosts = true # if show recent posts at main
+  recentPostsCount = 4 # how much recent posts will be showed
+  outOfDate = 2 # (months) 
+
+  # social media params
+  # [[params.social]]
+  #   name = "Twitter"
+  #   link = "#"
+  #   icon = "ti ti-brand-x"
+
+  [[params.social]]
+    name = "Github"
+    link = "https://github.com/zentialEdwardSu"
+    icon = "ti ti-brand-github"
+  
+  # [[params.social]]
+  #   name = "Gitlab"
+  #   link = "#"
+  #   icon = "ti ti-brand-gitlab"
+
+  [[params.social]]
+    name = "Mail" 
+    link = "hi@edwardsu.me"
+    icon = "ti ti-mail"
+
+  # [[params.social]]
+  #   name = "LinkedIn"
+  #   link = "#"
+  #   icon = "ti ti-brand-linkedin"
+
+[menu]
+  [[menu.main]]
+    name = "Articles"
+    url = "/articles/"
+    weight = 1
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 2
+  [[menu.main]]
+    name = "Me"
+    url = "/me/"
+    weight = 3
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# syntax highlight settings
+[markup]
+  [markup.highlight]
+    style = "dracula"
+  [markup.goldmark.renderer]
+    # Enable to include inline HTML
+    unsafe = true
+
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 1
