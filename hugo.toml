@@ -2,9 +2,9 @@ baseURL = 'https://example.org/' # will usually be overwrote during build time
 languageCode = 'en-us'
 title = 'Blog of EdwardSu'
 theme = "piatto"
-copyright = "MIT"
+copyright = "EdwardSu©2025"
 enableGitInfo = true
-
+googleAnalytics = "G-CXNB92M0PT"
 [params]
   name = "EdwardSu"
   description = "A Loafer and A bug producer."
