@@ -1,7 +1,23 @@
 [
-    {"name": "Hugo Theme Piatto", 
-    "description": "A simple but sueful theme for Hugo", 
-    "link": "https://github.com/zentialEdwardSu/hugo-theme-piatto", 
-    "tag": ["CSS"], 
-    "status": "Working"}
+    {
+        "name": "Hugo Theme Piatto",
+        "description": "A simple but useful theme for Hugo",
+        "link": "https://github.com/zentialEdwardSu/hugo-theme-piatto",
+        "tag": ["CSS"],
+        "status": "Working"
+    },
+    {
+        "name": "ppMeta",
+        "description": "A simple PowerPoint VSTO add-in, allow you to create Slide using plain text",
+        "link": "https://github.com/zentialEdwardSu/ppmeta",
+        "tag": ["C#","Office Addin"],
+        "status": "Working"
+    },
+    {
+        "name": "i3e-partner",
+        "description": "Download Author info/pub list and publication info, then save the results in a format suitable for AI or humans, with just one line of command!",
+        "link": "https://github.com/zentialEdwardSu/i3e-partner",
+        "tag": ["Python","Automation Tools"],
+        "status": "Working"
+    }  
 ]
