@@ -1,14 +1,14 @@
 baseURL = 'https://example.org/' # will usually be overwrote during build time
 languageCode = 'en-us'
-title = 'Blog of EdwardSu'
+title = 'IdeaCan of EdwardSu'
 theme = "piatto"
-copyright = "EdwardSu©2025"
+copyright = "EdwardSu©"
 enableGitInfo = true
 googleAnalytics = "G-CXNB92M0PT"
 [params]
   name = "EdwardSu"
   description = "A Loafer and A bug producer."
-  initials = "ES" # up-left icon
+  initials = "SU" # up-left icon
   footercd = true # cd ../ at bottom
   showReadingTime=true # reading time
   search = true # if show search bar at main

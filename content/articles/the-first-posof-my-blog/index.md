@@ -1,5 +1,5 @@
 ---
-title: The First PosOf My Blog
+title: The First Post Of My Blog
 description: :D
 tags:
 - makrdown

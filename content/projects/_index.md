@@ -1,4 +1,4 @@
 ---
 title: Projects
-description: Some Projects I'm working on.
+description: Some Projects of mine.
 ---
