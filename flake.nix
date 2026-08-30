@@ -1,5 +1,5 @@
 {
-  description = "Hugo and npx";
+  description = "Hugo and Node.js environment for the Piatto blog";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -18,6 +18,7 @@
           devShells.default = mkShell {
             buildInputs = [ 
               hugo
+              nodejs_22
             ];
           };
         }

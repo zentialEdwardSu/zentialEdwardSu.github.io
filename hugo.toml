@@ -1,68 +1,100 @@
-baseURL = 'https://example.org/' # will usually be overwrote during build time
-languageCode = 'en-us'
+baseURL = 'https://zentialedwardsu.github.io/'
+locale = 'en-US'
 title = 'IdeaCan of EdwardSu'
 theme = "piatto"
 copyright = "EdwardSu©"
 enableGitInfo = true
+enableRobotsTXT = true
 googleAnalytics = "G-CXNB92M0PT"
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+  [[build.cachebusters]]
+    source = 'package(-lock)?\.json'
+    target = 'css'
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+  [[module.mounts]]
+    source = 'content/projects/projects.json'
+    target = 'data/projects.json'
+
+[security]
+  allowContent = ['^text/(html|markdown|css|plain)$', '^application/json$']
+  [security.exec]
+    allow = ['^(dart-)?sass$', '^go$', '^git$', '^node$', '^postcss$', '^tailwindcss$']
+
 [params]
   name = "EdwardSu"
   description = "A Loafer and A bug producer."
   initials = "SU" # up-left icon
-  footercd = true # cd ../ at bottom
   showReadingTime=true # reading time
   search = true # if show search bar at main
   recentPosts = true # if show recent posts at main
   recentPostsCount = 4 # how much recent posts will be showed
   outOfDate = 2 # (months) 
 
-  # social media params
-  # [[params.social]]
-  #   name = "Twitter"
-  #   link = "#"
-  #   icon = "ti ti-brand-x"
+  [params.navigation]
+    showTaxonomies = true
+    taxonomyLabel = "Topics"
+    taxonomyURL = "/tags/"
+    tagsLabel = "Tags"
+    categoriesLabel = "Categories"
+
+    [[params.navigation.tabs]]
+      name = "Articles"
+      url = "/articles/"
+      listStyle = "rich"
+
+    [[params.navigation.tabs]]
+      name = "Projects"
+      url = "/projects/"
+      listStyle = "cards"
+      dataSource = "projects"
+
+    [[params.navigation.tabs]]
+      name = "Me"
+      url = "/me/"
 
   [[params.social]]
     name = "Github"
     link = "https://github.com/zentialEdwardSu"
-    icon = "ti ti-brand-github"
-  
-  # [[params.social]]
-  #   name = "Gitlab"
-  #   link = "#"
-  #   icon = "ti ti-brand-gitlab"
+    icon = "code"
 
   [[params.social]]
     name = "Mail" 
     link = "mailto:hi@edwardsu.me"
-    icon = "ti ti-mail"
-
-  # [[params.social]]
-  #   name = "LinkedIn"
-  #   link = "#"
-  #   icon = "ti ti-brand-linkedin"
-
-[menu]
-  [[menu.main]]
-    name = "Articles"
-    url = "/articles/"
-    weight = 1
-  [[menu.main]]
-    name = "Projects"
-    url = "/projects/"
-    weight = 2
-  [[menu.main]]
-    name = "Me"
-    url = "/me/"
-    weight = 3
+    icon = "mail"
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON", "LLMS", "LLMSFULL"]
+
+[outputFormats]
+  [outputFormats.LLMS]
+    mediaType = "text/plain"
+    baseName = "llms"
+    isPlainText = true
+    notAlternative = true
+  [outputFormats.LLMSFULL]
+    mediaType = "text/plain"
+    baseName = "llms-full"
+    isPlainText = true
+    notAlternative = true
 
 # syntax highlight settings
 [markup]
   [markup.highlight]
-    style = "dracula"
+    noClasses = false
   [markup.goldmark.renderer]
     # Enable to include inline HTML
     unsafe = true

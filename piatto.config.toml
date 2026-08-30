@@ -1,0 +1,10 @@
+[site]
+root = "."
+contentDir = "content/articles"
+hugoArgs = ["--gc"]
+
+[typst]
+entry = "main.typ"
+generatedDir = "generated/typst"
+fontPaths = []
+wordsPerMinute = 220

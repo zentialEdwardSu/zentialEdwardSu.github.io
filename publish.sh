@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/usr/bin/env bash
+
+set -euo pipefail
 
 if [[ $(git status -s) ]]
 then
@@ -18,7 +20,8 @@ echo "Removing existing files"
 rm -rf public/*
 
 echo "Generating site"
-hugo
+npm ci
+npm run build
 
 echo "Updating gh-pages branch"
 cd public && git add --all && git commit -m "Publishing to gh-pages (publish.sh)"

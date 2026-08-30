@@ -1,18 +1,19 @@
 ---
-title: 使用GithubAction持续集成Office-VSTO插件
-description: 使用Windows Installer 部署Office VSTO插件并配置Github Action以进行持续集成。
+title: 使用GithubAction构建Office-VSTO插件
+description: 使用Click Once打包Office VSTO插件并配置Github Action以进行自动构建。
 tags:
 - csharp
 - office add-ins
 - github action
 categories:
 - tutorials
-date: '2025-09-06'
+date: '2026-08-30'
+draft: false
 withToc: true
-cover: 'images/cover.png'
+cover: images/cover.png
 keepOrigin: false
 typst: false
-noWordTime: false
+nowordtime: false
 katex: false
 ---
 > 图片来源于 : [Unsplash](https://unsplash.com/)

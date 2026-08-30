@@ -1,0 +1,12 @@
+{
+  "name": "zentialedwardsu-blog",
+  "private": true,
+  "scripts": {
+    "build": "piatto build",
+    "check": "piatto check",
+    "dev": "piatto dev"
+  },
+  "devDependencies": {
+    "hugo-theme-piatto": "file:themes/piatto"
+  }
+}

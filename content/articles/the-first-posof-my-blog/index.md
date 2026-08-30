@@ -6,11 +6,12 @@ tags:
 categories:
 - thoughs
 date: '2025-02-04'
+draft: false
 withToc: true
-cover: './images/rocky.png'
+cover: images/rocky.png
 keepOrigin: false
 typst: false
-noWordTime: false
+nowordtime: false
 katex: false
 ---
 

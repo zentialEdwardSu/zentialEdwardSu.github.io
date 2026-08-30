@@ -1,8 +1,3 @@
-#set page(
-    paper: "a4",
-    margin: 0pt,
-  )
-
 #set text(
       font: ("Microsoft YaHei","Times New Roman"),
       size: 12pt
