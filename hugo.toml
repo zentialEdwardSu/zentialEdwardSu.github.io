@@ -52,6 +52,10 @@ googleAnalytics = "G-CXNB92M0PT"
     categoriesLabel = "Categories"
 
     [[params.navigation.tabs]]
+      name = "Home"
+      url = "/"
+
+    [[params.navigation.tabs]]
       name = "Articles"
       url = "/articles/"
       listStyle = "rich"
@@ -59,7 +63,7 @@ googleAnalytics = "G-CXNB92M0PT"
     [[params.navigation.tabs]]
       name = "Projects"
       url = "/projects/"
-      listStyle = "cards"
+      listStyle = "projects"
       dataSource = "projects"
 
     [[params.navigation.tabs]]
